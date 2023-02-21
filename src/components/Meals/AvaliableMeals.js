@@ -35,6 +35,7 @@ const AvaliableMeals = (props) => {
     const mealsList = DUMMY_MEALS.map((meal) => (
 
    <MealItem 
+    id = {meal.id}
     key = {meal.id}
     name = {meal.name}
     description = {meal.description}
@@ -42,7 +43,7 @@ const AvaliableMeals = (props) => {
    />
 
     ));
-
+   //  also pass meal = {meal} that passess all properties
   return (
 
     <section className={classes.meals}>
